@@ -1,0 +1,22 @@
+.image {
+    width: 700px;
+    height: 500px;
+}
+
+#message {
+    font-size: 25px;
+    color: blueviolet;
+}
+
+body {
+    background-color:cadetblue;
+}
+
+#name {
+    font-size: 1.5em;
+    color:blue;
+    background-color: blueviolet;
+    font-display: center;
+    border-radius: 30%;
+
+}

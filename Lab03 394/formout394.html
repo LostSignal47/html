@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+     crossorigin="anonymous">
+  </head>
+    <link rel="stylesheet"
+    href="frame394.css"> 
+
+
+</head>
+<body>
+    <header>
+      <img src="https://brand.mju.ac.th/images/mju_logo_FOOTER.png">
+    </header>
+
+    <section id="my-section" class="container my-5 bg-gradient w-70 text-dark p-2">
+      <main class="maincontainer m-5">
+        <form class="row g-3">
+          <h1><b>คำร้องขอลาออก</b></h1>
+        <!-- เพศ -->
+        <div class="Prefix col-auto">
+          <label for="inputPrefix" class="form-label"></label>
+          <div class="gender-category"> 
+            <input type="radio" name="gender" id="Mr." required>
+            <label for="Mr."> นาย⠀</label>
+            <input type="radio" name="gender" id="Mrs." required>
+            <label for="Mrs."> นาง⠀</label>
+            <input type="radio" name="gender" id="Ms." required>
+            <label for="Ms."> นางสาว⠀</label>
+          </div>
+         </div>
+        
+        <!-- ชื่อ-นามสกุล-->
+          <div class="col-md-4">
+            <label for="inputFname" class="form-label">ชื่อ</label>
+            <input type="text"
+            class="form-control"
+            id="inputFname"
+            placeholder="โปรดกรอกชื่อ"
+            required pattern="^[ก-๏\s]+$"{1,20}
+            maxlength="30"
+            >
+          </div>
+          <div class="col-md-4">
+            <label for="inputLname" class="form-label">นามสกุล</label>
+            <input type="text"
+            class="form-control"
+            id="inputLname" 
+            placeholder="โปรดกรอกนามสกุล"
+            required pattern="^[ก-๏\s]+$"{1,20}
+            maxlength="30">
+          </div>
+
+          <!-- รหัสนักศึกษา -->
+          <div class="col-4">
+            <label for="IDstudent" class="form-label">รหัสนักศึกษา(10หลัก)</label>
+            <input type="text" 
+            class="form-control" 
+            id="IDstudent" 
+            placeholder="650XXXXXXX" 
+            required pattern="\d{10}"
+            maxlength="10">
+          </div>
+
+          <!-- เบอร์ -->
+          <div class="col-4">
+            <label for="PhoneNumber" class="form-label">เบอร์โทรศัพท์(10หลัก)</label>
+            <input type="text" 
+            class="form-control" 
+            id="PhoneNumber" 
+            placeholder="081XXXXXXX"
+            required pattern="\d{10}"
+            maxlength="10">
+          </div>
+
+          <!-- หลักสูตร -->
+          <div class="col-md-4">
+            <label for="Course" class="form-label">หลักสูตร</label>
+            <select id="Course" class="form-select">
+              <option selected>เลือก</option>
+              <option value="1">4-5 ปี</option>
+              <option value="2">4 ปีเทียบเข้าเรียน(2ปี)</option>
+              <option value="3">ภาคปกติ</option>
+              <option value="4">ภาคสมทบ</option>
+            </select>
+          </div>
+
+          <!-- คณะ -->
+          <div class="col-md-6">
+            <label for="Faculty" class="form-label">คณะ</label>
+            <select id="Faculty" class="form-select">
+              <option selected>เลือก</option>
+              <option value="Business Administration">คณะบริหารธุรกิจ</option>
+                <option value="Science">คณะวิทยาศาสตร์</option>>
+                <option value="Nursing">คณะพยาบาลศาสตร์</option>>
+                <option value="Veterinary Science">คณะสัตวแพทย์ศาสตร์</option>>
+                <option value="Agricultural Production">คณะผลิตกรรมการเกษตร</option>
+                <option value="Liberal Arts">คณะศิลปศาสตร์</option>
+                <option value="Architecture and environmental design">คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม</option>
+                <option value="Information and Communication">คณะสารสนเทศและการสื่อสาร</option>
+                <option value="Fisheries Technology and water resources">คณะเทคโนโลยีการประมง และทรัพยากรทางน้ำ</option>
+                <option value="Engineering and Agro-Industry">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                <option value="Tourism Development">คณะพัฒนาการท่องเที่ยว</option>
+                <option value="Economics">คณะเศรษฐศาสตร์</option>
+                <option value="Animal Science and Technology">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                <option value="College of Administration">วิทยาลัยบริหารศาสตร์</option>
+                <option value="renewable energy college">วิทยาลัยพลังงานทดแทน</option>
+                <option value="international college">วิทยาลัยนานาชาติ</option>
+                <option value="Maejo University-Phrae">มหาวิทยาลัยแม่โจ้-แพร่ เฉลิมพระเกียรติ</option>
+                <option value="Maejo University - Chumphon">มหาวิทยาลัยแม่โจ้-ชุมพร</option>
+            </select>
+          </div>
+
+          <!-- สาขา -->
+          <div class="col-md-6">
+            <label for="Major" class="form-label">สาขา</label>
+            <select id="Major" class="form-select">
+              <option selected>เลือก</option>
+              <option value="1">วิทยาการคอมพิวเตอร์</option>
+              <option value="2">เคมี</option>
+              <option value="3">เทคโนโลยีชีวภาพ</option>
+              <option value="4">คณิตศาสตร์</option>
+              <option value="5">เทคโนโลยีสารสนเทศ</option>
+              <option value="6">ฟิสิกส์ประยุกต์</option>
+              <option value="7">นวัตกรรมวัสดุ</option>
+              <option value="8">วิทยาการการหาภาวะที่เหมาะสมทางอุตสาหกรรม</option>
+              <option value="9">สถิติและการจัดการสารสนเทศ</option>
+              <option value="10">นวัตกรรมเคมีอุตสาหกรรม</option>
+            </select>
+          </div>
+
+          <!-- ข้อคิดเห็น -->
+          <div class="col-14">
+            <label for="comment" class="form-label">ประสงค์จะขอลาออกเนื่อง</label>
+            <textarea class="form-control" 
+            placeholder="ระบุเหตุผล" 
+            id="floatingTextarea2" 
+            style="height: 100px"></textarea>
+          </div>
+
+          <!-- ลงชื่อนศ -->
+          <div class="col-md-12">
+            <label for="signature" class="form-label">ขอแสดงความนับถือ</label>
+            <input type="text" class="form-control" id="signature" placeholder="ลงชื่อนักศึกษา" 
+            required pattern="^[ก-๏\s]+$"{1,20} maxlength="70">
+          </div>
+
+          <!-- ใบยินยอมลาออกผปค -->
+          <label>แนบใบยินยอมขอลาออกจากผู้ปกครอง</label>
+          <input type="file" name="signature" id="signature">
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">ส่งแบบฟอร์ม</button>
+          </div>
+        </form>
+    </main>
+  </section>
+<footer></footer>
+
+
+</body>
+</html>

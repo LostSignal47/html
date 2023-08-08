@@ -1,0 +1,102 @@
+body{
+    background-color: ghostwhite;
+    margin: 0;
+}
+.head{
+    width: 100%;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    background-color: green;
+}
+.footer{
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    font-size: 40px;
+    justify-content: center;
+    background-color: darkgreen;
+}
+#box1,#box2,#box3,#box4,#box5,#box6{
+    margin: 40px;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: sandybrown;
+}
+@media (min-width: 576px) and (max-width:767px)/* phone 576px and up */{
+    .head{
+        align-items: center;  
+        justify-content: center; 
+    }
+    }
+    .box1-2-3,.box4-5-6{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer{
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        font-size: 30px;
+        position: static ;
+        text-align: center;
+        background-color: darkgreen;
+    }
+    #box1,#box2,#box3,#box4,#box5,#box6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+@media (min-width: 768px) and (max-width:991px) /* Tablet 768px and up  */{
+    .footer{
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        font-size: 40px;
+        position: static ;
+        text-align: center;
+        background-color: darkgreen;
+    }
+    #box1,#box2,#box3,#box4,#box5,#box6{
+        display:flex;
+        justify-content: center;
+    }
+    .box1-2-3,.box4-5-6{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) /*Labtop 992px and up*/{
+    #box1,#box2,#box3,#box4,#box5,#box6{
+        margin: 40px;
+        width: 200px;
+        padding: 30px;
+        height: 200px;
+        font-size: 20px;
+        text-align: center;
+        background-color: sandybrown;
+    }
+    .footer{
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        font-size: 40px;
+        position: fixed ;
+        text-align: center;
+        background-color: darkgreen;
+    }
+}
+@media (min-width:1200px) and (max-width:1399px) /*large desktops 1200px and up*/{
+}
+@media only screen and (min-width:1400px)/*large desktops 1400px up*/ {
+}
